@@ -56,5 +56,83 @@ def canonical(value) -> str:
     return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
 
 
+def calls_of(lines: list[dict]) -> list[dict]:
+    """A run's calls: every tool_call line, in order, before a resume line and after."""
+    return [line for line in lines if line.get("type") == "tool_call"]
+
+
+def identifiers(call: dict) -> list[str]:
+    """What a read's output can be recognised by later: the paths it returned, or, when
+    it returned none, the values of its input as text (lists item by item; nulls and
+    objects skipped; numbers and booleans as str() writes them)."""
+    paths = [str(p) for p in (call.get("paths") or []) if p]
+    if paths:
+        return paths
+    out: list[str] = []
+    data = call.get("input")
+    for value in (data.values() if isinstance(data, dict) else []):
+        if isinstance(value, (list, tuple)):
+            out.extend(str(v) for v in value if v is not None)
+        elif value is not None and not isinstance(value, dict):
+            out.append(str(value))
+    return out
+
+
+def appears(identifier: str, text: str) -> bool:
+    """True when the identifier (three characters or more) is in the text, ignoring
+    case; a path also appears when its file name alone does."""
+    identifier, text = identifier.lower(), text.lower()
+    if len(identifier) < 3:
+        return False
+    if identifier in text:
+        return True
+    name = identifier.rsplit("/", 1)[-1]
+    return "/" in identifier and len(name) >= 3 and name in text
+
+
+def final_comment(calls: list[dict]) -> str:
+    """The body of the run's last comment call, or "" when it posted none."""
+    comments = [c for c in calls if c.get("name") in COMMENT_WRITES]
+    if not comments:
+        return ""
+    data = comments[-1].get("input") or {}
+    return str(data.get("body") or "") if isinstance(data, dict) else ""
+
+
 def metrics(lines: list[dict], task) -> dict:
-    raise NotImplementedError("Part B, task 4")
+    calls = calls_of(lines)
+    reference = task.reference or {}
+    expected = set(reference.get("tools") or [])
+    used = {c.get("name") for c in calls}
+
+    # Step count: the run's calls against the reference count (slide 26).
+    step_count = len(calls) - int(reference.get("calls") or 0)
+
+    # Tool precision and recall, over distinct tool names.
+    precision = len(used & expected) / len(used) if used else None
+    recall = len(used & expected) / len(expected) if expected else 1.0
+
+    # Repeats: a call identical in name and canonical input to an earlier one.
+    seen: set[tuple[str, str]] = set()
+    repeats = 0
+    for c in calls:
+        key = (c.get("name"), canonical(c.get("input")))
+        repeats += key in seen
+        seen.add(key)
+
+    # Orphans: reads whose output no later step uses.
+    final = final_comment(calls)
+    orphans = 0
+    for i, c in enumerate(calls):
+        if c.get("name") in WRITES:
+            continue
+        later = " ".join(canonical(d.get("input")) for d in calls[i + 1:]) + " " + final
+        orphans += not any(appears(x, later) for x in identifiers(c))
+
+    ends = [line for line in lines if line.get("type") == "run_end"]
+    end = ends[-1] if ends else {}
+    totals = end.get("totals") or {}
+    return {"step_count": step_count, "precision": precision, "recall": recall,
+            "repeats": repeats, "orphans": orphans, "no_tools": not calls,
+            "cost_usd": float(totals.get("cost_usd") or 0.0),
+            "latency_s": float(end.get("elapsed_s") or 0.0)}
