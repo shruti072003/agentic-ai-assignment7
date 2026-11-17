@@ -1,0 +1,16 @@
+id: g10
+kind: single
+issues: [4614]
+stratum: unusual
+decision: act
+expect:
+  comment: {label: bug, file: src/ingest/parser.ts}
+  labels: [bug]
+  pr: draft
+source: 'Fixed in #952 after review: splitFields in src/ingest/parser.ts treats an
+  inch mark inside an unquoted field as ordinary text.'
+runs: [agent-issue-4614-s01-d77f63]
+reference:
+  calls: 7
+  tools: [issues_read, code_search, code_read_file, issues_label, issues_comment,
+    pulls_open, code_run_tests]

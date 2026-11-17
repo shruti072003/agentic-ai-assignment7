@@ -1,0 +1,16 @@
+id: g18
+kind: single
+issues: [4626]
+stratum: unusual
+decision: act
+expect:
+  comment: {label: feature, file: src/db/repos/reportRepo.ts}
+  labels: [feature]
+  pr: draft
+source: The issue states that src/db/repos/reportRepo.ts should break ties by report
+  name instead of id.
+runs: [agent-issue-4626-s01-238030, agent-issue-4626-s01-e9cb13]
+reference:
+  calls: 7
+  tools: [issues_read, code_search, code_read_file, issues_label, issues_comment,
+    pulls_open, code_run_tests]

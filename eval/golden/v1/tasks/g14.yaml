@@ -1,0 +1,16 @@
+id: g14
+kind: single
+issues: [4622]
+stratum: unusual
+decision: act
+expect:
+  comment: {label: feature, file: src/export/scheduler.ts}
+  labels: [feature]
+  pr: draft
+source: 'Fixed in #974: src/export/scheduler.ts skips email for empty scheduled reports
+  and advances the next run.'
+runs: [agent-issue-4622-s01-f1171c, workflow-issue-4622-s01-4e5355]
+reference:
+  calls: 7
+  tools: [issues_read, code_search, code_read_file, issues_label, issues_comment,
+    pulls_open, code_run_tests]

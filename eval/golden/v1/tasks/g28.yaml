@@ -1,0 +1,12 @@
+id: g28
+kind: single
+issues: [4613]
+stratum: should_not_act
+decision: stop
+expect:
+  comment: null
+  labels: []
+  pr: none
+source: "The issue discussion says the reporter upgraded to 3.2.1, confirmed the pages are correct, and the maintainer closed the report with nothing more needed."
+runs: ["planned-issue-4613-s01-092041", "workflow-issue-4613-s01-0c2433"]
+reference: {calls: 1, tools: [issues_read]}

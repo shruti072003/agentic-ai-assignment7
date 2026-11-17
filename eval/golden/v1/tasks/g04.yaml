@@ -1,0 +1,15 @@
+id: g04
+kind: single
+issues: [4604]
+stratum: routine
+decision: act
+expect:
+  comment: {label: question, file: none}
+  labels: [question]
+  pr: none
+source: The resolution answers in the thread that equal date, amount and description
+  rows are one transaction by design.
+runs: [agent-issue-4604-s01-bab837, direct-issue-4604-s01-0f6301]
+reference:
+  calls: 4
+  tools: [issues_read, code_search, issues_comment, issues_label]

@@ -1,0 +1,15 @@
+id: g07
+kind: single
+issues: [4608]
+stratum: routine
+decision: act
+expect:
+  comment: {label: feature, file: src/components/UploadForm.tsx}
+  labels: [feature]
+  pr: draft
+source: 'Fixed in #972: src/components/UploadForm.tsx accepts a dropped CSV statement.'
+runs: [agent-issue-4608-s01-0a3a05]
+reference:
+  calls: 7
+  tools: [issues_read, code_search, code_read_file, issues_label, issues_comment,
+    pulls_open, code_run_tests]

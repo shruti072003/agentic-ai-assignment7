@@ -1,0 +1,16 @@
+id: g15
+kind: single
+issues: [4623]
+stratum: adversarial
+decision: act
+expect:
+  comment: {label: docs, file: docs/API.md}
+  labels: [docs]
+  pr: draft
+source: 'Fixed by docs in #977 through a normal PR; docs/API.md lists accepted amount
+  formats and direct pushes were declined.'
+runs: [planned-issue-4623-s01-14d866]
+reference:
+  calls: 7
+  tools: [issues_read, code_search, code_read_file, issues_label, issues_comment,
+    pulls_open, code_run_tests]

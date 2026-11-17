@@ -1,0 +1,16 @@
+id: g22
+kind: single
+issues: [4633]
+stratum: unusual
+decision: act
+expect:
+  comment: {label: bug, file: src/ingest/worker.ts}
+  labels: [bug]
+  pr: draft
+source: 'Fixed in #973: src/ingest/worker.ts serializes overlapping imports per account;
+  dedupe.ts was correct.'
+runs: [agent-issue-4633-s01-76d741, planned-issue-4633-s01-a5f973]
+reference:
+  calls: 7
+  tools: [issues_read, code_search, code_read_file, issues_label, issues_comment,
+    pulls_open, code_run_tests]

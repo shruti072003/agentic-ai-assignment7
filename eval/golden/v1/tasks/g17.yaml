@@ -1,0 +1,16 @@
+id: g17
+kind: single
+issues: [4625]
+stratum: routine
+decision: act
+expect:
+  comment: {label: feature, file: src/exportUtils.ts}
+  labels: [feature]
+  pr: draft
+source: 'Fixed in #980: src/exportUtils.ts''s toDelimited option accepts a semicolon
+  separator for German Excel.'
+runs: [direct-issue-4625-s01-b6476b, planned-issue-4625-s01-29c661]
+reference:
+  calls: 7
+  tools: [issues_read, code_search, code_read_file, issues_label, issues_comment,
+    pulls_open, code_run_tests]

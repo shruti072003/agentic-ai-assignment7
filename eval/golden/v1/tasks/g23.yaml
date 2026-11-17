@@ -1,0 +1,16 @@
+id: g23
+kind: single
+issues: [4635]
+stratum: routine
+decision: act
+expect:
+  comment: {label: bug, file: src/api/reports.ts}
+  labels: [bug]
+  pr: draft
+source: 'Fixed in #979: src/api/reports.ts sums totals per currency in SQL instead
+  of loading every row.'
+runs: [planned-issue-4635-s01-cb51e0]
+reference:
+  calls: 7
+  tools: [issues_read, code_search, code_read_file, issues_label, issues_comment,
+    pulls_open, code_run_tests]

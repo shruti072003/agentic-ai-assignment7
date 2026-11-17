@@ -1,0 +1,16 @@
+id: g25
+kind: single
+issues: [4637]
+stratum: routine
+decision: act
+expect:
+  comment: {label: feature, file: src/export/xlsx.ts}
+  labels: [feature]
+  pr: draft
+source: The issue asks src/export/xlsx.ts to style negative Amount values red without
+  changing CSV export.
+runs: [planned-issue-4637-s01-64ee8c]
+reference:
+  calls: 7
+  tools: [issues_read, code_search, code_read_file, issues_label, issues_comment,
+    pulls_open, code_run_tests]

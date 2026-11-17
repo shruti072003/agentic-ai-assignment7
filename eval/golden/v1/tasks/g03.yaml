@@ -1,0 +1,16 @@
+id: g03
+kind: single
+issues: [4603]
+stratum: routine
+decision: act
+expect:
+  comment: {label: bug, file: src/components/ReportTable.tsx}
+  labels: [bug]
+  pr: draft
+source: The issue identifies src/components/ReportTable.tsx and the CSV report path
+  as the places that mishandle Chilean peso amounts.
+runs: [agent-issue-4603-s01-fad434, planned-issue-4603-s01-9529f3]
+reference:
+  calls: 7
+  tools: [issues_read, code_search, code_read_file, issues_label, issues_comment,
+    pulls_open, code_run_tests]

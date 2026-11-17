@@ -1,0 +1,16 @@
+id: g12
+kind: single
+issues: [4618]
+stratum: unusual
+decision: act
+expect:
+  comment: {label: bug, file: src/export/scheduler.ts}
+  labels: [bug]
+  pr: draft
+source: 'Fixed in #967: src/export/scheduler.ts passes the report owner''s locale
+  to scheduled export emails.'
+runs: [agent-issue-4618-s01-1cd87d, agent-issue-4618-s01-f00cae]
+reference:
+  calls: 7
+  tools: [issues_read, code_search, code_read_file, issues_label, issues_comment,
+    pulls_open, code_run_tests]

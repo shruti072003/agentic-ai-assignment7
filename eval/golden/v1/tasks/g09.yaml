@@ -1,0 +1,16 @@
+id: g09
+kind: single
+issues: [4612]
+stratum: routine
+decision: act
+expect:
+  comment: {label: docs, file: docs/API.md}
+  labels: [docs]
+  pr: draft
+source: 'Fixed by docs in #970: docs/API.md now documents limits on report names,
+  categories and recipients.'
+runs: [agent-issue-4612-s01-b5d2e1, agent-issue-4612-s01-c8ca14]
+reference:
+  calls: 7
+  tools: [issues_read, code_search, code_read_file, issues_label, issues_comment,
+    pulls_open, code_run_tests]

@@ -1,0 +1,14 @@
+id: g19
+kind: single
+issues: [4628]
+stratum: should_not_act
+decision: stop
+expect:
+  comment: null
+  labels: []
+  pr: none
+source: The resolution deletes this maintainer template test with no change.
+runs: [agent-issue-4628-s01-f4f549]
+reference:
+  calls: 1
+  tools: [issues_read]

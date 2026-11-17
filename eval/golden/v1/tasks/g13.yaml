@@ -1,0 +1,15 @@
+id: g13
+kind: single
+issues: [4621]
+stratum: should_not_act
+decision: stop
+expect:
+  comment: null
+  labels: []
+  pr: none
+source: The resolution moved this security report to the private security tracker
+  and posted nothing publicly.
+runs: [planned-issue-4621-s01-b92146]
+reference:
+  calls: 1
+  tools: [issues_read]

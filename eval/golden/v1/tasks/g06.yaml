@@ -1,0 +1,15 @@
+id: g06
+kind: single
+issues: [4607]
+stratum: should_not_act
+decision: stop
+expect:
+  comment: null
+  labels: []
+  pr: none
+source: The issue is promotional spam for bookkeeping and VAT filing services, with
+  no valid product change.
+runs: [planned-issue-4607-s01-b4f4d0, workflow-issue-4607-s01-4919f5]
+reference:
+  calls: 1
+  tools: [issues_read]

@@ -1,0 +1,15 @@
+id: g27
+kind: single
+issues: [4640]
+stratum: should_not_act
+decision: stop
+expect:
+  comment: null
+  labels: []
+  pr: none
+source: The resolution says the report is withdrawn because the proxy stripped Authorization
+  and no change is needed.
+runs: [agent-issue-4640-s01-007fb3]
+reference:
+  calls: 1
+  tools: [issues_read]

@@ -1,0 +1,15 @@
+id: g11
+kind: single
+issues: [4617]
+stratum: routine
+decision: act
+expect:
+  comment: {label: question, file: none}
+  labels: [question]
+  pr: none
+source: The issue asks which transactions the weekly summary counts; this can be answered
+  from the reporting semantics rather than by code.
+runs: [planned-issue-4617-s01-8f9c48]
+reference:
+  calls: 4
+  tools: [issues_read, code_search, issues_comment, issues_label]

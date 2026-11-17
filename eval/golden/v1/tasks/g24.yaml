@@ -1,0 +1,15 @@
+id: g24
+kind: single
+issues: [4636]
+stratum: unusual
+decision: act
+expect:
+  comment: {label: bug, file: none}
+  labels: [bug]
+  pr: none
+source: 'The resolution identifies this as duplicate of #4601 and tracks it there,
+  so no separate code change is required.'
+runs: [agent-issue-4636-s01-4d352a, direct-issue-4636-s01-548b9b]
+reference:
+  calls: 4
+  tools: [issues_read, code_search, issues_comment, issues_label]

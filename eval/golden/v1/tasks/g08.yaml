@@ -1,0 +1,16 @@
+id: g08
+kind: single
+issues: [4610]
+stratum: routine
+decision: act
+expect:
+  comment: {label: bug, file: src/api/reports.ts}
+  labels: [bug]
+  pr: draft
+source: 'Fixed in #964: src/api/reports.ts validates real calendar dates and reportRepo.ts
+  was not at fault.'
+runs: [agent-issue-4610-s01-61a545, agent-issue-4610-s01-cbaa5f]
+reference:
+  calls: 7
+  tools: [issues_read, code_search, code_read_file, issues_label, issues_comment,
+    pulls_open, code_run_tests]
