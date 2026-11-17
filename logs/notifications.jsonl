@@ -25,3 +25,15 @@
 {"at": "2026-11-17T23:08:17.850Z", "kind": "live", "run_id": "planned-g25-s01-0f07bb", "text": "RepoMind is running on issue 4637; stop it with: bin/stop planned-g25-s01-0f07bb", "issue": 4637}
 {"at": "2026-11-17T23:08:17.887Z", "kind": "live", "run_id": "planned-g26-s01-efc20b", "text": "RepoMind is running on issue 4639; stop it with: bin/stop planned-g26-s01-efc20b", "issue": 4639}
 {"at": "2026-11-17T23:08:18.144Z", "kind": "live", "run_id": "planned-g27-s01-3cfa5a", "text": "RepoMind is running on issue 4640; stop it with: bin/stop planned-g27-s01-3cfa5a", "issue": 4640}
+{"at": "2026-11-17T23:47:29.970Z", "kind": "live", "run_id": "planned-g02-s01-2e33d0", "text": "RepoMind is running on issue 4602; stop it with: bin/stop planned-g02-s01-2e33d0", "issue": 4602}
+{"at": "2026-11-17T23:48:29.136Z", "kind": "live", "run_id": "planned-g16-s01-941a3d", "text": "RepoMind is running on issue 4624; stop it with: bin/stop planned-g16-s01-941a3d", "issue": 4624}
+{"at": "2026-11-17T23:48:29.136Z", "kind": "live", "run_id": "planned-g23-s01-1de126", "text": "RepoMind is running on issue 4635; stop it with: bin/stop planned-g23-s01-1de126", "issue": 4635}
+{"at": "2026-11-17T23:48:29.136Z", "kind": "live", "run_id": "planned-g07-s01-9f60a0", "text": "RepoMind is running on issue 4608; stop it with: bin/stop planned-g07-s01-9f60a0", "issue": 4608}
+{"at": "2026-11-17T23:55:55.715Z", "kind": "live", "run_id": "arm_planned-g23-s01-5a60d4", "text": "RepoMind is running on issue 4635; stop it with: bin/stop arm_planned-g23-s01-5a60d4", "issue": 4635}
+{"at": "2026-11-17T23:55:55.715Z", "kind": "live", "run_id": "arm_planned-g07-s01-db6c55", "text": "RepoMind is running on issue 4608; stop it with: bin/stop arm_planned-g07-s01-db6c55", "issue": 4608}
+{"at": "2026-11-17T23:55:55.715Z", "kind": "live", "run_id": "arm_planned-g16-s01-9930c9", "text": "RepoMind is running on issue 4624; stop it with: bin/stop arm_planned-g16-s01-9930c9", "issue": 4624}
+{"at": "2026-11-17T23:55:55.715Z", "kind": "live", "run_id": "arm_planned-g02-s01-24e1c6", "text": "RepoMind is running on issue 4602; stop it with: bin/stop arm_planned-g02-s01-24e1c6", "issue": 4602}
+{"at": "2026-11-17T23:57:52.245Z", "kind": "live", "run_id": "arm_planned-g16-s02-6bcea1", "text": "RepoMind is running on issue 4624; stop it with: bin/stop arm_planned-g16-s02-6bcea1", "issue": 4624}
+{"at": "2026-11-17T23:57:52.245Z", "kind": "live", "run_id": "arm_planned-g23-s02-684e44", "text": "RepoMind is running on issue 4635; stop it with: bin/stop arm_planned-g23-s02-684e44", "issue": 4635}
+{"at": "2026-11-17T23:57:52.245Z", "kind": "live", "run_id": "arm_planned-g02-s02-884c61", "text": "RepoMind is running on issue 4602; stop it with: bin/stop arm_planned-g02-s02-884c61", "issue": 4602}
+{"at": "2026-11-17T23:57:52.245Z", "kind": "live", "run_id": "arm_planned-g07-s02-2eea6e", "text": "RepoMind is running on issue 4608; stop it with: bin/stop arm_planned-g07-s02-2eea6e", "issue": 4608}

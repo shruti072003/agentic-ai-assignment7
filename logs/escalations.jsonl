@@ -1,0 +1,4 @@
+{"at": "2026-11-17T23:56:12.750Z", "run_id": "arm_planned-g02-s01-24e1c6", "signal": "blocked_three_times", "reached_reviewer": true, "capped": false, "cap": 5}
+{"at": "2026-11-17T23:56:14.432Z", "run_id": "arm_planned-g07-s01-db6c55", "signal": "blocked_three_times", "reached_reviewer": true, "capped": false, "cap": 5}
+{"at": "2026-11-17T23:56:14.867Z", "run_id": "arm_planned-g23-s01-5a60d4", "signal": "blocked_three_times", "reached_reviewer": true, "capped": false, "cap": 5}
+{"at": "2026-11-17T23:58:07.413Z", "run_id": "arm_planned-g02-s02-884c61", "signal": "blocked_three_times", "reached_reviewer": true, "capped": false, "cap": 5}
