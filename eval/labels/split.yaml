@@ -1,0 +1,6 @@
+# Part D, task 3: seeded (7), balanced by system and label; eval/make_split.py
+examples: [j12, j15, j19, j31, j45, j53, j59, j60]
+tuning: [j03, j04, j08, j09, j14, j16, j17, j18, j20, j22, j23, j27, j28, j32, j34, j36, j39, j42, j43,
+  j46, j47, j48, j50, j51, j54, j58]
+test: [j01, j02, j05, j06, j07, j10, j11, j13, j21, j24, j25, j26, j29, j30, j33, j35, j37, j38, j40,
+  j41, j44, j49, j52, j55, j56, j57]
