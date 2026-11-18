@@ -661,24 +661,36 @@
   },
   "judge": {
     "split": {
-      "examples": 0,
-      "tuning": 0,
-      "test": 0
+      "examples": 8,
+      "tuning": 26,
+      "test": 26
     },
-    "model": null,
-    "tpr": null,
-    "tnr": null,
-    "p": null,
-    "corrected": null,
-    "interval": null,
-    "coin": null,
-    "flip_rate": null,
+    "model": "gpt-4.1-mini",
+    "tpr": 0.7333333333333333,
+    "tnr": 0.5454545454545454,
+    "p": 1.0,
+    "corrected": 1.0,
+    "interval": [
+      0.0,
+      1.0
+    ],
+    "coin": false,
+    "flip_rate": 0.3076923076923077,
     "majority": {
-      "tpr": null,
-      "tnr": null,
-      "kept": null
+      "tpr": 0.8666666666666667,
+      "tnr": 0.5454545454545454,
+      "kept": true
     },
-    "moved_share": null,
-    "by_system": {}
+    "moved_share": 0.3076923076923077,
+    "by_system": {
+      "claude-haiku-5-5": {
+        "tpr": 0.7142857142857143,
+        "tnr": 0.5
+      },
+      "claude-sonnet-5-5": {
+        "tpr": 0.75,
+        "tnr": 0.6
+      }
+    }
   }
 }
