@@ -1,61 +1,61 @@
 id,label,reason
-j01,,
-j02,,
-j03,,
-j04,,
-j05,,
-j06,,
-j07,,
-j08,,
-j09,,
-j10,,
-j11,,
-j12,,
-j13,,
-j14,,
-j15,,
-j16,,
-j17,,
-j18,,
-j19,,
-j20,,
-j21,,
-j22,,
-j23,,
-j24,,
-j25,,
-j26,,
-j27,,
-j28,,
-j29,,
-j30,,
-j31,,
-j32,,
-j33,,
-j34,,
-j35,,
-j36,,
-j37,,
-j38,,
-j39,,
-j40,,
-j41,,
-j42,,
-j43,,
-j44,,
-j45,,
-j46,,
-j47,,
-j48,,
-j49,,
-j50,,
-j51,,
-j52,,
-j53,,
-j54,,
-j55,,
-j56,,
-j57,,
-j58,,
-j59,,
-j60,,
+j01,fail,"The src/api/errors.ts claim about field-named Zod details is not supported by this output."
+j02,fail,"Line 41 is not shown in a search result; the file read provides no line numbers."
+j03,fail,"The previewStatement call and its timing before storage are not shown in the evidence."
+j04,fail,"The claimed passing last-CI test result is absent from the issue and tool results."
+j05,pass,"The issue and rollup evidence confirm empty-week skips; the PR record matches the documentation change."
+j06,pass,"The error-handler evidence and PR record support the root-error explanation and proposed details change."
+j07,pass,"The issue and auth schemas support the trailing-space behavior; the PR record matches the trim proposal."
+j08,pass,"The report limits are supported by the schema evidence and the PR record."
+j09,pass,"The parser evidence and PR record support the quoted-header diagnosis and fix."
+j10,pass,"The upload evidence shows the name is stored and returned; re-decoding only on upload supports the claim about existing names."
+j11,pass,"The rollup and transaction-query evidence support the account-wide scope; the 72-row explanation is framed as likely."
+j12,fail,"The claim that test/reports.test.ts passed in full has no test result in this output."
+j13,fail,"Neither the browser opening the CSV nor the quoted console error appears in the evidence."
+j14,pass,"The issue and auth schemas support the behavior; the PR record matches the trim proposal."
+j15,pass,"The health-handler evidence shows only db and queue checks; the PR record matches the storage-check proposal."
+j16,pass,"The worker and queue evidence support the concurrency diagnosis; the PR record matches the serialization proposal."
+j17,pass,"The config source confirms missing files return an empty object; the PR record matches the proposed error."
+j18,fail,"The issue calls the id tie-break random-like, but no evidence identifies the ids as random UUIDs."
+j19,pass,"The config source supports the missing-file behavior; the PR record matches the proposed explicit-path error."
+j20,fail,"The evidence does not establish GET / as the API-root health endpoint or support the claim about triage authority."
+j21,fail,"The claimed import log text, expected 4 fields got 2 at row 14, is absent from the evidence."
+j22,fail,"The comment says 07:00 UTC, but the scheduler evidence sets RUN_HOUR_UTC to 6."
+j23,fail,"The pagination source clamps pageSize to 100; it does not reject values above 100."
+j24,pass,"The API, query, table, and export evidence support the preview and ordering explanation."
+j25,fail,"The stated docs/API.md list of accepted date formats is not shown in this output's evidence."
+j26,pass,"The issue and dedupe source support raw-string keys; the PR record matches the NFC proposal."
+j27,pass,"The XLSX number-format source and PR record support the red-negative formatting proposal."
+j28,pass,"The issue and rollup source confirm quiet-week skips; the PR record matches the documentation note."
+j29,fail,"The claimed Unterminated quoted field error at row 2 is absent from the evidence."
+j30,pass,"The issue and rollup/time-zone sources support the timing diagnosis; the PR record matches the interval proposal."
+j31,fail,"The export evidence does not establish that formatMinor uses a comma decimal mark."
+j32,fail,"The claim that documentation changes must go through pull request and review is unsupported by this output."
+j33,pass,"The XLSX number-format source and PR record support the proposed display-format change."
+j34,fail,"The code read has no line numbers, so the specific line 11 claim is unsupported."
+j35,pass,"The amount-parser source supports the leading-digit diagnosis; the PR record matches the proposed fix."
+j36,pass,"The upload-form evidence shows picker-only handling; the PR record matches the requested drop behavior."
+j37,fail,"The exact unauthenticated 401 response is not supported by this output's health evidence."
+j38,pass,"The PATCH handler evidence supports schedule recomputation; the PR record matches the nextRunAt proposal."
+j39,pass,"The ReportLine source shows the fixed plural; the PR record supports the singular wording."
+j40,fail,"The quoted maintainer warning is not present in the issue or tool results."
+j41,fail,"The ReportForm validation claim is unsupported; that component is neither read nor shown with those checks."
+j42,pass,"The error-handler evidence and PR record support the proposed change; the tool sequence contains no test run."
+j43,pass,"The French strings and scheduler/template evidence support the missing-locale explanation."
+j44,pass,"The pagination source and PR record support the response shape and proposed page signals."
+j45,pass,"The Toast/i18n evidence and PR record support the missing-locale diagnosis and fix."
+j46,fail,"The specific claim that 312 CLP rows were stored with rounding is unsupported."
+j47,fail,"The parser regex rejects trailing-minus 75-; the claim that it imports is contradicted by the source."
+j48,fail,"The quoted maintainer statement about empty exports is absent from this output."
+j49,fail,"No shown result supports the docs/PERFORMANCE.md recommendation or its threshold."
+j50,pass,"The export source and PR record support the comma default and optional-delimiter proposal."
+j51,pass,"The rollup and totals-query evidence support the week and account scope; the explanation is framed as likely."
+j52,pass,"The Toast/i18n source and PR record support the untranslated label and locale fix."
+j53,fail,"The claim that documentation changes must go through pull request and review is unsupported."
+j54,pass,"The worker/queue evidence supports the concurrency explanation; the PR record matches per-account serialization."
+j55,fail,"No issue or tool result says failed-key uploads are kept in a quarantine folder."
+j56,pass,"The dedupe source defines the key, keeps the first match, and describes both overlapping and stored rows."
+j57,pass,"The API, query, table, and export evidence support the 50-row preview explanation."
+j58,pass,"The French catalog and scheduler/template evidence support the locale diagnosis and proposed change."
+j59,fail,"The parser read contains no DEFAULT_DELIMITER constant, contradicting that assertion."
+j60,pass,"The upload handler and PR record support the filename decoding explanation and proposed fix."
