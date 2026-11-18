@@ -1,0 +1,10 @@
+{
+ "attempted": "open_pr for step 5 of the plan on issue 4605: open one draft pull request for the file",
+ "why_stopped": "step 2 failed 3 times",
+ "needs_from_human": "approve to try the step once more, or deny and the step is skipped",
+ "signal": "blocked_three_times",
+ "at": "2026-11-18T00:00:00.187Z",
+ "run_id": "arm_planned-g05-s01-8cc7f7",
+ "issue": 4605,
+ "step": 5
+}

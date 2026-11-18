@@ -47,10 +47,11 @@ The notes, one per run with the decision it made and its first wrong step, are i
 
 ## Part C · Settle one claim
 
-- The claim, its two arms, the measure and the sign of the gain:
-- The first three sweeps: each arm's *s*, and the cost of one sweep:
-- *δ*, the sweeps it needs, and the price (slide 55):
-- The bar and the group rule, as committed, and the commit:
+- The claim is that the planned arm (A) uses fewer repeated plan steps than the agent arm (B); the measure is repeats per run, so gain is B − A.
+- Before the fourth sweep, the first three sweeps had zero spread in both arms (*s*ₐ = 0.0, *s*ᵦ = 0.0); one sweep cost $0.0505 for A and $0.0421 for B.
+- I chose δ = 0.5 repeats per run as the smallest worthwhile gain. With zero spread, the sizing rule substitutes one subset step (0.1); it gives *n_needed* = 1 sweep per arm and an estimated price of $0.09. The experiment still runs the planned five sweeps per arm.
+- The threshold configuration sets bar = 0.0 (the interval's low end must be strictly positive) and group_floor = 0.0 (no stratum may have negative gain), with k = 3. It is in `eval/thresholds/claim.yaml`; it has not yet been committed.
+- Prediction: B will have about 0.5 more repeats per run, with the largest gap in the unusual stratum, because the agent may continue searching or revisit evidence on ambiguous or misleading reports while the planned arm follows a fixed sequence.
 
 **The results**, from `results/`.
 

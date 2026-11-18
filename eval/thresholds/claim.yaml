@@ -1,0 +1,23 @@
+claim: plan
+arm_a:
+  way: arm_planned
+  switches: {}
+arm_b:
+  way: agent
+  switches: {}
+measure: repeats
+gain: B - A
+sweeps: 5
+s_a: 0.1
+s_b: 0.1
+delta: 0.5
+n_needed: 1
+price_usd: 0.09
+bar: 0.0
+group_floor: 0.0
+k: 3
+prediction:
+  arm: A
+  by: 0.5
+  stratum: unusual
+  why: "The agent arm may keep searching or repeat related evidence-gathering calls on ambiguous or misleading reports, while the planned arm can follow a fixed sequence."
