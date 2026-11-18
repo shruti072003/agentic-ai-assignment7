@@ -107,7 +107,7 @@ Arm B (40 failed runs)   issues_label  pulls_open  issues_comment  issues_close 
 
 ## Part D · Validate a judge
 
-- The criterion's lines, and what labelling added to them:
+- The criterion is in `eval/judge/criterion.md`: it evaluates grounding, not whether the diagnosis or triage decision is correct; correctness is the Part A grounded check's job. Every in-scope factual claim must be supported by the issue or returned tool results, and contradictory evidence makes a claim fail. A triage `label:` value and the decision to act are out of scope by themselves, but a factual statement that a withdrawn or fixed issue is still occurring fails. `file: none` makes no file claim; an explanation for it is judged normally. A file named in the issue is supported even if it is ultimately the wrong target, unless a tool result in that output contradicts the comment's claim. A search hit naming a path alone is insufficient, while a `code_read_file` result can support it. Line-number claims require a search result that shows the number because file reads contain no line numbers. Header syntax and the required disclosure line are out of scope. The eight Part A failure kinds prompt inspection but do not determine labels—for example, an incomplete workflow can still have a grounded comment. If further clarifications arise during hand-labeling, record them here and relabel every affected output.
 - The split, and when it was committed:
 - The judge: its model and version, and its TPR and TNR on the test set:
 - Its pass rate on the recorded runs, corrected, with its interval:
