@@ -161,10 +161,503 @@
       }
     }
   },
-  "failures": [],
+  "failures": [
+    {
+      "run_id": "agent-g06-s01-133e97",
+      "arm": "B",
+      "last_good": "issues_read",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "agent-g06-s02-0fc1da",
+      "arm": "B",
+      "last_good": "issues_read",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "agent-g06-s03-cb2634",
+      "arm": "B",
+      "last_good": "issues_read",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "agent-g06-s04-92566e",
+      "arm": "B",
+      "last_good": "issues_read",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "agent-g06-s05-1ca665",
+      "arm": "B",
+      "last_good": "issues_read",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "agent-g09-s01-cf327b",
+      "arm": "B",
+      "last_good": "issues_label",
+      "first_wrong": "pulls_open"
+    },
+    {
+      "run_id": "agent-g09-s02-985b38",
+      "arm": "B",
+      "last_good": "code_read_file",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "agent-g09-s03-ddea8d",
+      "arm": "B",
+      "last_good": "code_read_file",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "agent-g09-s04-e62493",
+      "arm": "B",
+      "last_good": "issues_label",
+      "first_wrong": "pulls_open"
+    },
+    {
+      "run_id": "agent-g09-s05-435dff",
+      "arm": "B",
+      "last_good": "code_search",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "agent-g15-s01-bbf8f9",
+      "arm": "B",
+      "last_good": "issues_label",
+      "first_wrong": "issues_comment"
+    },
+    {
+      "run_id": "agent-g15-s02-4409d2",
+      "arm": "B",
+      "last_good": "issues_comment",
+      "first_wrong": "stop"
+    },
+    {
+      "run_id": "agent-g15-s03-9785aa",
+      "arm": "B",
+      "last_good": "issues_comment",
+      "first_wrong": "stop"
+    },
+    {
+      "run_id": "agent-g15-s04-d4c3ab",
+      "arm": "B",
+      "last_good": "issues_comment",
+      "first_wrong": "stop"
+    },
+    {
+      "run_id": "agent-g15-s05-375c1c",
+      "arm": "B",
+      "last_good": "issues_comment",
+      "first_wrong": "stop"
+    },
+    {
+      "run_id": "agent-g21-s01-bb45cd",
+      "arm": "B",
+      "last_good": "issues_label",
+      "first_wrong": "issues_close"
+    },
+    {
+      "run_id": "agent-g21-s02-0d3394",
+      "arm": "B",
+      "last_good": "issues_label",
+      "first_wrong": "issues_close"
+    },
+    {
+      "run_id": "agent-g21-s03-a65d88",
+      "arm": "B",
+      "last_good": "issues_read",
+      "first_wrong": "issues_close"
+    },
+    {
+      "run_id": "agent-g21-s04-4d7f39",
+      "arm": "B",
+      "last_good": "issues_read",
+      "first_wrong": "issues_close"
+    },
+    {
+      "run_id": "agent-g21-s05-0dad6f",
+      "arm": "B",
+      "last_good": "issues_label",
+      "first_wrong": "issues_close"
+    },
+    {
+      "run_id": "agent-g22-s01-d6b99a",
+      "arm": "B",
+      "last_good": "code_search",
+      "first_wrong": "code_read_file"
+    },
+    {
+      "run_id": "agent-g22-s02-3e51bb",
+      "arm": "B",
+      "last_good": "code_search",
+      "first_wrong": "code_read_file"
+    },
+    {
+      "run_id": "agent-g22-s03-0a2fde",
+      "arm": "B",
+      "last_good": "code_search",
+      "first_wrong": "code_read_file"
+    },
+    {
+      "run_id": "agent-g22-s04-20f741",
+      "arm": "B",
+      "last_good": "code_search",
+      "first_wrong": "code_read_file"
+    },
+    {
+      "run_id": "agent-g22-s05-56d957",
+      "arm": "B",
+      "last_good": "code_search",
+      "first_wrong": "code_read_file"
+    },
+    {
+      "run_id": "agent-g24-s01-8ea8e7",
+      "arm": "B",
+      "last_good": "issues_label",
+      "first_wrong": "pulls_open"
+    },
+    {
+      "run_id": "agent-g24-s02-c87dc3",
+      "arm": "B",
+      "last_good": "issues_label",
+      "first_wrong": "pulls_open"
+    },
+    {
+      "run_id": "agent-g24-s03-64f9cf",
+      "arm": "B",
+      "last_good": "issues_label",
+      "first_wrong": "pulls_open"
+    },
+    {
+      "run_id": "agent-g24-s04-4e3fef",
+      "arm": "B",
+      "last_good": "issues_label",
+      "first_wrong": "pulls_open"
+    },
+    {
+      "run_id": "agent-g24-s05-9e0e54",
+      "arm": "B",
+      "last_good": "issues_label",
+      "first_wrong": "pulls_open"
+    },
+    {
+      "run_id": "agent-g26-s01-ce7d0e",
+      "arm": "B",
+      "last_good": "issues_read",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "agent-g26-s02-010107",
+      "arm": "B",
+      "last_good": "issues_read",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "agent-g26-s03-07d590",
+      "arm": "B",
+      "last_good": "issues_read",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "agent-g26-s04-eaf3d2",
+      "arm": "B",
+      "last_good": "issues_read",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "agent-g26-s05-d14a6d",
+      "arm": "B",
+      "last_good": "issues_read",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "agent-g28-s01-fb3957",
+      "arm": "B",
+      "last_good": "issues_read",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "agent-g28-s02-7f82f1",
+      "arm": "B",
+      "last_good": "issues_read",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "agent-g28-s03-0adbb7",
+      "arm": "B",
+      "last_good": "issues_read",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "agent-g28-s04-28ddb7",
+      "arm": "B",
+      "last_good": "issues_read",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "agent-g28-s05-1ed055",
+      "arm": "B",
+      "last_good": "issues_read",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "arm_planned-g01-s01-6922ec",
+      "arm": "A",
+      "last_good": "code_search",
+      "first_wrong": "code_search"
+    },
+    {
+      "run_id": "arm_planned-g01-s02-43fad7",
+      "arm": "A",
+      "last_good": "code_search",
+      "first_wrong": "code_read_file"
+    },
+    {
+      "run_id": "arm_planned-g01-s03-8c7474",
+      "arm": "A",
+      "last_good": "code_search",
+      "first_wrong": "code_read_file"
+    },
+    {
+      "run_id": "arm_planned-g01-s04-2c4950",
+      "arm": "A",
+      "last_good": "code_search",
+      "first_wrong": "code_search"
+    },
+    {
+      "run_id": "arm_planned-g01-s05-af6b9c",
+      "arm": "A",
+      "last_good": "code_search",
+      "first_wrong": "code_read_file"
+    },
+    {
+      "run_id": "arm_planned-g06-s01-061e47",
+      "arm": "A",
+      "last_good": "issues_read",
+      "first_wrong": "code_search"
+    },
+    {
+      "run_id": "arm_planned-g06-s02-f0367c",
+      "arm": "A",
+      "last_good": "issues_read",
+      "first_wrong": "code_search"
+    },
+    {
+      "run_id": "arm_planned-g06-s03-4ccd24",
+      "arm": "A",
+      "last_good": "issues_read",
+      "first_wrong": "code_search"
+    },
+    {
+      "run_id": "arm_planned-g06-s04-361ce4",
+      "arm": "A",
+      "last_good": "issues_read",
+      "first_wrong": "code_search"
+    },
+    {
+      "run_id": "arm_planned-g06-s05-e5d785",
+      "arm": "A",
+      "last_good": "issues_read",
+      "first_wrong": "code_search"
+    },
+    {
+      "run_id": "arm_planned-g09-s01-b5f4b1",
+      "arm": "A",
+      "last_good": "code_read_file",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "arm_planned-g09-s02-f07a76",
+      "arm": "A",
+      "last_good": "code_read_file",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "arm_planned-g09-s03-3ff706",
+      "arm": "A",
+      "last_good": "code_read_file",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "arm_planned-g09-s04-42946e",
+      "arm": "A",
+      "last_good": "code_read_file",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "arm_planned-g09-s05-f1ad82",
+      "arm": "A",
+      "last_good": "code_read_file",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "arm_planned-g15-s01-a7d863",
+      "arm": "A",
+      "last_good": "code_search",
+      "first_wrong": "code_read_file"
+    },
+    {
+      "run_id": "arm_planned-g15-s04-3d4d9c",
+      "arm": "A",
+      "last_good": "code_search",
+      "first_wrong": "code_read_file"
+    },
+    {
+      "run_id": "arm_planned-g21-s01-2e44c4",
+      "arm": "A",
+      "last_good": "code_read_file",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "arm_planned-g22-s01-33d198",
+      "arm": "A",
+      "last_good": "code_search",
+      "first_wrong": "code_read_file"
+    },
+    {
+      "run_id": "arm_planned-g22-s02-7caa78",
+      "arm": "A",
+      "last_good": "code_search",
+      "first_wrong": "code_read_file"
+    },
+    {
+      "run_id": "arm_planned-g22-s03-1b72bf",
+      "arm": "A",
+      "last_good": "code_search",
+      "first_wrong": "code_read_file"
+    },
+    {
+      "run_id": "arm_planned-g22-s04-569a99",
+      "arm": "A",
+      "last_good": "code_search",
+      "first_wrong": "code_read_file"
+    },
+    {
+      "run_id": "arm_planned-g22-s05-c95ec3",
+      "arm": "A",
+      "last_good": "code_search",
+      "first_wrong": "code_read_file"
+    },
+    {
+      "run_id": "arm_planned-g24-s02-7304d4",
+      "arm": "A",
+      "last_good": "code_search",
+      "first_wrong": "issues_label"
+    },
+    {
+      "run_id": "arm_planned-g24-s03-647317",
+      "arm": "A",
+      "last_good": "code_read_file",
+      "first_wrong": "pulls_open"
+    },
+    {
+      "run_id": "arm_planned-g24-s05-dfa57f",
+      "arm": "A",
+      "last_good": "issues_label",
+      "first_wrong": "pulls_open"
+    },
+    {
+      "run_id": "arm_planned-g26-s01-525e95",
+      "arm": "A",
+      "last_good": "issues_read",
+      "first_wrong": "code_search"
+    },
+    {
+      "run_id": "arm_planned-g26-s02-71cf2a",
+      "arm": "A",
+      "last_good": "issues_read",
+      "first_wrong": "code_search"
+    },
+    {
+      "run_id": "arm_planned-g26-s03-b404db",
+      "arm": "A",
+      "last_good": "issues_read",
+      "first_wrong": "code_search"
+    },
+    {
+      "run_id": "arm_planned-g26-s04-7207d7",
+      "arm": "A",
+      "last_good": "issues_read",
+      "first_wrong": "code_search"
+    },
+    {
+      "run_id": "arm_planned-g26-s05-309f8f",
+      "arm": "A",
+      "last_good": "issues_read",
+      "first_wrong": "code_search"
+    },
+    {
+      "run_id": "arm_planned-g28-s01-3dea29",
+      "arm": "A",
+      "last_good": "issues_read",
+      "first_wrong": "code_search"
+    },
+    {
+      "run_id": "arm_planned-g28-s02-faffa3",
+      "arm": "A",
+      "last_good": "issues_read",
+      "first_wrong": "code_search"
+    },
+    {
+      "run_id": "arm_planned-g28-s03-34bf03",
+      "arm": "A",
+      "last_good": "issues_read",
+      "first_wrong": "code_search"
+    },
+    {
+      "run_id": "arm_planned-g28-s04-63b90e",
+      "arm": "A",
+      "last_good": "issues_read",
+      "first_wrong": "code_search"
+    },
+    {
+      "run_id": "arm_planned-g28-s05-044c72",
+      "arm": "A",
+      "last_good": "issues_read",
+      "first_wrong": "code_search"
+    }
+  ],
   "grid": {
-    "A": {},
-    "B": {}
+    "A": {
+      "code_search": {
+        "code_search": 2,
+        "code_read_file": 10,
+        "issues_label": 1
+      },
+      "issues_read": {
+        "code_search": 15
+      },
+      "code_read_file": {
+        "issues_label": 6,
+        "pulls_open": 1
+      },
+      "issues_label": {
+        "pulls_open": 1
+      }
+    },
+    "B": {
+      "issues_read": {
+        "issues_label": 15,
+        "issues_close": 2
+      },
+      "issues_label": {
+        "pulls_open": 7,
+        "issues_comment": 1,
+        "issues_close": 3
+      },
+      "code_read_file": {
+        "issues_label": 2
+      },
+      "code_search": {
+        "issues_label": 1,
+        "code_read_file": 5
+      },
+      "issues_comment": {
+        "stop": 4
+      }
+    }
   },
   "judge": {
     "split": {
