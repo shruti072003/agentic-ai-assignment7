@@ -131,4 +131,12 @@ Arm B (40 failed runs)   issues_label  pulls_open  issues_comment  issues_close 
 
 ## AI assistance
 
-Which tool, what it wrote, and what you checked. No assistant writes or suggests a label.
+**AI Tool Used:** Claude Code
+
+I led the design and evaluation of the experiments, including defining the research questions, developing the evaluation methodology, and determining how results would be measured. I wrote the open-coding notes and their categories, defined the 28 golden tasks and their labels, selected the evaluation subset, established the evaluation criteria and thresholds, and specified the expected outcomes in `claim.yaml`. I also reviewed and labeled all 60 judge examples, providing the reasoning behind each label.
+
+I used Claude Code to assist with implementing the evaluation pipeline, including the grounding checks, statistical analysis, metrics, and judge infrastructure. It also helped implement `ways/arm_planned.py` based on my Assignment 5 fixes, write supporting evaluation scripts, and execute the Part C experiments and judge. I reviewed the generated implementation and used the resulting outputs to analyze the experimental findings.
+
+I drafted the report's technical content based on my analysis of the results. Claude Code assisted with organizing the results into the report and updating `CHANGES.md` and the evaluation section of `ARCHITECTURE.md`.
+
+Finally, I reviewed the evaluation methodology and implementation, revised my open-coding notes based on feedback, verified the prediction in `claim.yaml` against the direction of the measured gain, and checked that each commit was made before its corresponding experiment was run. I also cross-checked the claims in Section D against my manually produced labels.
